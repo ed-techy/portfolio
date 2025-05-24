@@ -8,15 +8,16 @@ export default function Home() {
         <div className='container hero-2'>
           <div className='border border-1 rounded-3'>
             <div className='box-linear-animation position-relative z-1'>
-              <div className='row align-items-end py-60'>
-                <div className='col-lg-5 ps-lg-5 text-lg-start text-center'>
-                  <div className='position-relative mb-lg-0 mb-5'>
+              <div className='row align-items-center py-60'>
+                <div className='col-lg-5 ps-lg-5'>
+                  <div className='position-relative mb-lg-0 mb-5 mt-8 photo-container'>
                     <img
                       src='assets/imgs/home-page-2/hero-1/people.png'
                       alt='portfolio'
                     />
-                    <div className='position-absolute end-0 top-100 translate-middle-y icon-decorate'>
+                    <div className='position-relative d-flex icon-decorate'>
                       <img
+                        className='translate-middle-y m-auto'
                         src='assets/imgs/home-page-2/hero-1/icon.svg'
                         alt='portfolio'
                       />

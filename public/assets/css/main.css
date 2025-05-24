@@ -14212,6 +14212,11 @@ strong {
   color: #6e4ef2;
 }
 
+.section-hero-2 .photo-container {
+  max-width: 70%;
+  margin: auto;
+}
+
 .section-footer-2 .main-logo span {
   font-family: var(--dmMono);
   font-size: 24px;
@@ -14246,10 +14251,6 @@ strong {
 }
 .section-hero-2 .background .bg-d {
   display: none;
-}
-.section-hero-2 .icon-decorate {
-  margin-right: 210px;
-  padding-bottom: 30px;
 }
 .section-hero-2 .carouselTicker__item {
   margin: 0 10px;

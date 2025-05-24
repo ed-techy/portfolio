@@ -1,6 +1,5 @@
 import Layout from '@/components/layout/Layout';
 import Contact from '@/components/sections/Contact';
-import Coporation from '@/components/sections/Coporation';
 import Education from '@/components/sections/Education';
 import Experience from '@/components/sections/Experience';
 import Home from '@/components/sections/Home';
@@ -15,7 +14,6 @@ export default function HomePage2() {
       <Layout>
         <Home />
         <Static />
-        <Coporation />
         <Service />
         <Experience />
         <Education />
