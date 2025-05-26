@@ -1,3 +1,4 @@
+'use client';
 import Layout from '@/components/layout/Layout';
 import Contact from '@/components/sections/Contact';
 import Education from '@/components/sections/Education';
