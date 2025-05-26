@@ -71,7 +71,7 @@ export default function Header({
                     <Link href='/http://linkedin.com'>
                       <i className='ri-linkedin-fill fs-18' />
                     </Link>
-                    <Link href='/http://github.com'>
+                    <Link href='https://github.com/ed-techy' target='_blank'>
                       <i className='ri-github-fill fs-18' />
                     </Link>
                   </div>
