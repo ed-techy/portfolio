@@ -64,9 +64,12 @@ export default function Home() {
                           <ul className='carouselTicker__list '>
                             {skills.map((skill) => (
                               <li className='carouselTicker__item' key={skill.name}>
-                                <a className='brand-logo icon_60 icon-shape rounded-3'>
+                                <Link
+                                  href='javascript:void(0)'
+                                  className='brand-logo icon_60 icon-shape rounded-3'
+                                >
                                   <img src={skill.image} alt={skill.name} />
-                                </a>
+                                </Link>
                               </li>
                             ))}
                           </ul>
