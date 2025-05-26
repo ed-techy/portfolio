@@ -530,7 +530,7 @@ img {
     color: transparent;
   }
   50% {
-    color: #1f1f24;
+    color: var(--tc-neutral-0);
   }
   100% {
     color: transparent;
