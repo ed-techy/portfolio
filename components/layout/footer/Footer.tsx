@@ -13,7 +13,7 @@ export default function Footer() {
                 <a href='http://linkedin.com'>
                   <i className='ri-linkedin-fill fs-18' />
                 </a>
-                <a href='http://github.com'>
+                <a href='https://github.com/ed-techy' target='_blank'>
                   <i className='ri-github-fill fs-18' />
                 </a>
               </div>

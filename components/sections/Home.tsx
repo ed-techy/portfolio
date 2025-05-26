@@ -38,7 +38,7 @@ export default function Home() {
                     <h1 className='fs-50 my-3'>
                       Senior{' '}
                       <span className='text-linear-4'>
-                        {'{'}Full Stack{'}'}
+                        {'{'}Full Stack{'} '}
                       </span>
                       Web &amp; App developer<span className='flicker'>_</span>
                     </h1>
