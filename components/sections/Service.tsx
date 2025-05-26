@@ -176,7 +176,7 @@ export default function Service() {
                       Excited to take on <span className='text-dark'>new projects</span>{' '}
                       and collaborate. <br />
                       Let's chat about your ideas.{' '}
-                      <Link href='#' className='text-primary-2'>
+                      <Link href='#contact' className='text-primary-2'>
                         Reach out!
                       </Link>
                     </p>
