@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Marquee from 'react-fast-marquee';
+import skills from '@/data/Skills.json';
 
 export default function Home() {
   return (
@@ -11,15 +12,12 @@ export default function Home() {
               <div className='row align-items-center py-60'>
                 <div className='col-lg-5 ps-lg-5'>
                   <div className='position-relative mb-lg-0 mb-5 mt-8 photo-container'>
-                    <img
-                      src='assets/imgs/home-page-2/hero-1/people.png'
-                      alt='portfolio'
-                    />
+                    <img src='assets/imgs/home-page-2/hero-1/people.png' alt='photo' />
                     <div className='position-relative d-flex icon-decorate'>
                       <img
                         className='translate-middle-y m-auto'
                         src='assets/imgs/home-page-2/hero-1/icon.svg'
-                        alt='portfolio'
+                        alt='photo'
                       />
                     </div>
                   </div>
@@ -40,19 +38,22 @@ export default function Home() {
                       <span className='text-linear-4'>
                         {'{'}Full Stack{'} '}
                       </span>
-                      Web &amp; App developer<span className='flicker'>_</span>
+                      Mobile &amp; Web developer<span className='flicker'>_</span>
                     </h1>
                     <p className='mb-6 text-secondary-2'>
                       &lt;p&gt;
                       <span className='text-dark'>
                         With expertise in cutting-edge technologies such as
                       </span>{' '}
-                      <span className='text-secondary-2'>NodeJS</span>,{' '}
+                      <span className='text-secondary-2'>React Native</span>,{' '}
+                      <span className='text-secondary-2'>Flutter</span>,{' '}
                       <span className='text-secondary-2'>React</span>,{' '}
-                      <span className='text-secondary-2'>Angular</span>, and{' '}
-                      <span className='text-secondary-2'>Laravel</span>
+                      <span className='text-secondary-2'>Node.js</span>,{' '}
+                      <span className='text-secondary-2'>Supabase</span>, and{' '}
+                      <span className='text-secondary-2'>AWS</span>
                       <span className='text-dark'>
-                        ... I deliver web solutions that are both innovative and robust.
+                        ... I deliver mobile and web solutions that are both innovative
+                        and robust.
                       </span>
                       &lt;/p&gt;
                     </p>
@@ -61,61 +62,13 @@ export default function Home() {
                         {/* Carausel Scroll */}
                         <Marquee className='carouselTicker carouselTicker-left position-relative z-1 mt-lg-0 mt-8'>
                           <ul className='carouselTicker__list '>
-                            <li className='carouselTicker__item'>
-                              <Link
-                                href='#'
-                                className='brand-logo icon_60 icon-shape rounded-3'
-                              >
-                                <img
-                                  src='assets/imgs/home-page-2/hero-1/icon-1.svg'
-                                  alt='brand'
-                                />
-                              </Link>
-                            </li>
-                            <li className='carouselTicker__item'>
-                              <Link
-                                href='#'
-                                className='brand-logo icon_60 icon-shape rounded-3'
-                              >
-                                <img
-                                  src='assets/imgs/home-page-2/hero-1/icon-2.svg'
-                                  alt='brand'
-                                />
-                              </Link>
-                            </li>
-                            <li className='carouselTicker__item'>
-                              <Link
-                                href='#'
-                                className='brand-logo icon_60 icon-shape rounded-3'
-                              >
-                                <img
-                                  src='assets/imgs/home-page-2/hero-1/icon-3.svg'
-                                  alt='brand'
-                                />
-                              </Link>
-                            </li>
-                            <li className='carouselTicker__item'>
-                              <Link
-                                href='#'
-                                className='brand-logo icon_60 icon-shape rounded-3'
-                              >
-                                <img
-                                  src='assets/imgs/home-page-2/hero-1/icon-4.svg'
-                                  alt='brand'
-                                />
-                              </Link>
-                            </li>
-                            <li className='carouselTicker__item'>
-                              <Link
-                                href='#'
-                                className='brand-logo icon_60 icon-shape rounded-3'
-                              >
-                                <img
-                                  src='assets/imgs/home-page-2/hero-1/icon-5.svg'
-                                  alt='brand'
-                                />
-                              </Link>
-                            </li>
+                            {skills.map((skill) => (
+                              <li className='carouselTicker__item' key={skill.name}>
+                                <a className='brand-logo icon_60 icon-shape rounded-3'>
+                                  <img src={skill.image} alt={skill.name} />
+                                </a>
+                              </li>
+                            ))}
                           </ul>
                         </Marquee>
                       </div>
