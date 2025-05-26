@@ -26,7 +26,7 @@ export default function Service() {
                     </span>
                   </div>
                   <h3>
-                    Designing solutions
+                    Designing solutions{' '}
                     <span className='text-300'>
                       customized
                       <br />
@@ -36,6 +36,29 @@ export default function Service() {
                 </div>
                 <div className='container mt-5'>
                   <div className='row g-4'>
+                    <div className='col-lg-4 col-md-6'>
+                      <div className='card-servies-2 rounded-2 h-100 hover-up'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='0 0 384 512'
+                          width={24}
+                          height={24}
+                        >
+                          <path
+                            d='M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64L80 64l0 320 224 0 0-320z'
+                            fill='#1F1F24'
+                          />
+                        </svg>
+                        <h6 className='my-3 fw-medium'>Mobile Development</h6>
+                        <p className='fs-7 text-300 fw-regular'>
+                          Developing fast, cross-platform mobile apps with smooth user
+                          experiences using{' '}
+                          <span className='text-secondary-2'>React Native</span>,{' '}
+                          <span className='text-secondary-2'>Expo</span>, and{' '}
+                          <span className='text-secondary-2'>Flutter</span>.
+                        </p>
+                      </div>
+                    </div>
                     <div className='col-lg-4 col-md-6'>
                       <div className='card-servies-2 rounded-2 h-100 hover-up'>
                         <svg
@@ -50,36 +73,13 @@ export default function Service() {
                             fill='#1F1F24'
                           />
                         </svg>
-                        <h6 className='my-3 fw-medium'>Web &amp; App Development</h6>
+                        <h6 className='my-3 fw-medium'>Web Development</h6>
                         <p className='fs-7 text-300 fw-regular'>
                           Crafting visually appealing and user-friendly interfaces using{' '}
                           <span className='text-secondary-2'>HTML</span>,{' '}
                           <span className='text-secondary-2'>CSS</span>,{' '}
                           <span className='text-secondary-2'>JavaScript</span>, and modern
-                          frameworks like React and Angular.
-                        </p>
-                      </div>
-                    </div>
-                    <div className='col-lg-4 col-md-6'>
-                      <div className='card-servies-2 rounded-2 h-100 hover-up'>
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          width={24}
-                          height={24}
-                          viewBox='0 0 24 24'
-                          fill='none'
-                        >
-                          <path
-                            d='M3 2.9918C3 2.44405 3.44495 2 3.9934 2H20.0066C20.5552 2 21 2.45531 21 2.9918V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918ZM19 11V4H5V11H19ZM19 13H5V20H19V13ZM9 6H15V8H9V6ZM9 15H15V17H9V15Z'
-                            fill='#1F1F24'
-                          />
-                        </svg>
-                        <h6 className='my-3 fw-medium'>Database Management</h6>
-                        <p className='fs-7 text-300 fw-regular'>
-                          Designing and managing databases with SQL and NoSQL technologies
-                          such as <span className='text-secondary-2'>MySQL</span>,{' '}
-                          <span className='text-secondary-2'>PostgreSQL</span>, and{' '}
-                          <span className='text-secondary-2'>MongoDB</span>.
+                          frameworks like React and Next.js.
                         </p>
                       </div>
                     </div>
@@ -100,7 +100,8 @@ export default function Service() {
                         <h6 className='my-3 fw-medium'>API Development</h6>
                         <p className='fs-7 text-300 fw-regular'>
                           Creating and integrating{' '}
-                          <span className='text-secondary-2'>RESTful APIs</span> to enable
+                          <span className='text-secondary-2'>RESTful APIs</span> and{' '}
+                          <span className='text-secondary-2'>GraphQL APIs</span> to enable
                           smooth communication between front-end and back-end systems.
                         </p>
                       </div>
@@ -121,10 +122,8 @@ export default function Service() {
                         </svg>
                         <h6 className='my-3 fw-medium'>Performance Optimization</h6>
                         <p className='fs-7 text-300 fw-regular'>
-                          Improving the speed and performance of web applications to
-                          provide a better user experience. Work with{' '}
-                          <span className='text-secondary-2'>Nodejs</span>,{' '}
-                          <span className='text-secondary-2'>Express</span>
+                          Improving the speed and performance of mobile web applications
+                          to provide a better user experience.
                         </p>
                       </div>
                     </div>
