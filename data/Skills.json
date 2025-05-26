@@ -1,0 +1,38 @@
+[
+  {
+    "name": "React Native",
+    "image": "assets/imgs/home-page-2/hero-1/icon-6.svg"
+  },
+  {
+    "name": "Flutter",
+    "image": "assets/imgs/home-page-2/hero-1/icon-8.svg"
+  },
+  {
+    "name": "React",
+    "image": "assets/imgs/home-page-2/hero-1/icon-7.svg"
+  },
+  {
+    "name": "Next.js",
+    "image": "assets/imgs/home-page-2/hero-1/icon-1.svg"
+  },
+  {
+    "name": "Tailwind CSS",
+    "image": "assets/imgs/home-page-2/hero-1/icon-5.svg"
+  },
+  {
+    "name": "Node.js",
+    "image": "assets/imgs/home-page-2/hero-1/icon-4.svg"
+  },
+  {
+    "name": "MongoDB",
+    "image": "assets/imgs/home-page-2/hero-1/icon-3.svg"
+  },
+  {
+    "name": "Firebase",
+    "image": "assets/imgs/home-page-2/hero-1/icon-2.svg"
+  },
+  {
+    "name": "AWS",
+    "image": "assets/imgs/home-page-2/hero-1/icon-9.svg"
+  }
+]
