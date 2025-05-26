@@ -1,6 +1,15 @@
+import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import employmentHistories from '@/data/Experience.json';
 
 export default function Experience() {
+  const [activeHistoryId, setActiveHistoryId] = useState(employmentHistories[0].id);
+
+  const activeHistory = useMemo(
+    () => employmentHistories.find((history) => history.id === activeHistoryId),
+    [activeHistoryId],
+  );
+
   return (
     <>
       <section id='portfolio' className='section-experience pt-5'>
@@ -25,9 +34,8 @@ export default function Experience() {
                   </span>
                 </div>
                 <h3>
-                  +10
-                  <span className='text-300'>years of </span>
-                  passion
+                  +10 <span className='text-300'>years of </span>
+                  passion{' '}
                   <span className='text-300'>
                     for <br />
                     programming techniques
@@ -36,89 +44,46 @@ export default function Experience() {
                 <div className='row mt-5'>
                   <div className='col-lg-4'>
                     <div className='d-flex flex-column gap-2'>
-                      <Link href='#' className='technology border border-1 rounded-3 p-3'>
-                        <div className='d-flex align-items-center gap-2'>
-                          <img
-                            src='assets/imgs/home-page-2/experience/google.svg'
-                            alt='portfolio'
-                          />
-                          <div className='d-flex flex-column ms-2'>
-                            <h5 className='mb-1'>Google</h5>
-                            <span className='text-300'>2018 - Present</span>
+                      {employmentHistories.map((history) => (
+                        <Link
+                          href='javascript:void(0)'
+                          key={history.id}
+                          className='technology border border-1 rounded-3 p-3'
+                          onClick={() => setActiveHistoryId(history.id)}
+                        >
+                          <div className='d-flex align-items-center gap-2'>
+                            {/* <img
+                              src='assets/imgs/home-page-2/experience/google.svg'
+                              alt='portfolio'
+                            /> */}
+                            <div className='d-flex flex-column ms-2'>
+                              <h5 className='mb-1'>{history.company}</h5>
+                              <span className='text-300'>{history.duration}</span>
+                            </div>
                           </div>
-                        </div>
-                      </Link>
-                      <Link href='#' className='technology border border-1 rounded-3 p-3'>
-                        <div className='d-flex align-items-center gap-2'>
-                          <img
-                            src='assets/imgs/home-page-2/experience/twitter.svg'
-                            alt='portfolio'
-                          />
-                          <div className='d-flex flex-column ms-2'>
-                            <h5 className='mb-1'>Twitter (X)</h5>
-                            <span className='text-300'>2012 - 2015</span>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link href='#' className='technology border border-1 rounded-3 p-3'>
-                        <div className='d-flex align-items-center gap-2'>
-                          <img
-                            src='assets/imgs/home-page-2/experience/amazon.svg'
-                            alt='portfolio'
-                          />
-                          <div className='d-flex flex-column ms-2'>
-                            <h5 className='mb-1'>Amazon</h5>
-                            <span className='text-300'>2018 - Present</span>
-                          </div>
-                        </div>
-                      </Link>
-                      <Link href='#' className='technology border border-1 rounded-3 p-3'>
-                        <div className='d-flex align-items-center gap-2'>
-                          <img
-                            src='assets/imgs/home-page-2/experience/payPal.svg'
-                            alt='portfolio'
-                          />
-                          <div className='d-flex flex-column ms-2'>
-                            <h5 className='mb-1'>PayPal</h5>
-                            <span className='text-300'>2010 - 2012</span>
-                          </div>
-                        </div>
-                      </Link>
+                        </Link>
+                      ))}
                     </div>
                   </div>
                   <div className='col-lg-8 ps-lg-5 mt-5 mt-lg-0'>
-                    <h6 className='text-linear-4'>Senior Software Engineer</h6>
+                    <h6 className='text-linear-4'>{activeHistory?.role}</h6>
                     <ul className='mt-4'>
-                      <li className='text-dark mb-3'>
-                        Led development of scalable web applications,{' '}
-                        <span className='text-secondary-2'>improving performance</span>{' '}
-                        and user experience for millions of users.
-                      </li>
-                      <li className='text-dark mb-3'>
-                        Implemented machine learning algorithms to enhance search
-                        functionality.
-                      </li>
-                      <li className='text-dark mb-3'>
-                        Collaborated with cross-functional teams to integrate new features
-                        seamlessly.
-                      </li>
+                      {activeHistory?.contributions.map((contribution) => (
+                        <li className='text-dark mb-3' key={contribution}>
+                          {contribution}
+                        </li>
+                      ))}
                     </ul>
                     <div className='d-flex flex-wrap align-items-center gap-3 mt-7'>
-                      <Link href='#' className='text-300 border border-1 px-3 py-1'>
-                        Python
-                      </Link>
-                      <Link href='#' className='text-300 border border-1 px-3 py-1'>
-                        TensorFlow
-                      </Link>
-                      <Link href='#' className='text-300 border border-1 px-3 py-1'>
-                        Angular
-                      </Link>
-                      <Link href='#' className='text-300 border border-1 px-3 py-1'>
-                        Kubernetes
-                      </Link>
-                      <Link href='#' className='text-300 border border-1 px-3 py-1'>
-                        GCP
-                      </Link>
+                      {activeHistory?.skills.map((skill) => (
+                        <Link
+                          href='javascript:void(0)'
+                          className='text-300 border border-1 px-3 py-1'
+                          id={skill}
+                        >
+                          {skill}
+                        </Link>
+                      ))}
                     </div>
                   </div>
                 </div>
