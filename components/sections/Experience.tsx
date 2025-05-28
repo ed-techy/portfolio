@@ -80,6 +80,7 @@ export default function Experience() {
                           href='javascript:void(0)'
                           className='text-300 border border-1 px-3 py-1'
                           id={skill}
+                          key={skill}
                         >
                           {skill}
                         </Link>
