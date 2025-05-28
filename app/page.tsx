@@ -18,7 +18,7 @@ export default function HomePage2() {
         <Service />
         <Experience />
         <Education />
-        <Projects />
+        {/* <Projects /> */}
         <Skills />
         <Contact />
       </Layout>
