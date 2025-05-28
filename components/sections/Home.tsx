@@ -40,7 +40,7 @@ export default function Home() {
                       </span>
                       Mobile &amp; Web developer<span className='flicker'>_</span>
                     </h1>
-                    <p className='mb-6 text-secondary-2'>
+                    <p className='mb-2 text-secondary-2'>
                       &lt;p&gt;
                       <span className='text-dark'>
                         With expertise in cutting-edge technologies such as
@@ -57,19 +57,20 @@ export default function Home() {
                       </span>
                       &lt;/p&gt;
                     </p>
-                    <div className='row'>
+                    <div className='row section-skills-2'>
                       <div className='col-7'>
                         {/* Carausel Scroll */}
                         <Marquee className='carouselTicker carouselTicker-left position-relative z-1 mt-lg-0 mt-8'>
-                          <ul className='carouselTicker__list '>
+                          <ul className='carouselTicker__list'>
                             {skills.map((skill) => (
-                              <li className='carouselTicker__item' key={skill.name}>
+                              <li className='carouselTicker__item mt-6' key={skill.name}>
                                 <Link
                                   href='javascript:void(0)'
                                   className='brand-logo icon_60 icon-shape rounded-3'
                                 >
                                   <img src={skill.image} alt={skill.name} />
                                 </Link>
+                                <span className='tool-tip'>{skill.name}</span>
                               </li>
                             ))}
                           </ul>

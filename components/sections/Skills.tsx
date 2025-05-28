@@ -1,7 +1,15 @@
+import { useMemo } from 'react';
 import Link from 'next/link';
 import Marquee from 'react-fast-marquee';
+import skills from '@/data/Skills.json';
 
 export default function Skills() {
+  const firstSkillsCount = Math.ceil(skills.length / 2);
+
+  const firstSkills = useMemo(() => skills.slice(0, firstSkillsCount), [skills]);
+
+  const secondSkills = useMemo(() => skills.slice(firstSkillsCount), skills);
+
   return (
     <>
       <section id='skills' className='section-skills-2 pt-5'>
@@ -23,10 +31,10 @@ export default function Skills() {
                     </svg>
                     <span className='text-linear-4 d-flex align-items-center'>
                       {' '}
-                      Projects{' '}
+                      Skills{' '}
                     </span>
                   </div>
-                  <h3>My Skills</h3>
+                  <h3>Languages, Frameworks, and Tools</h3>
                 </div>
                 <div className='container mt-8'>
                   <div className='row'>
@@ -39,66 +47,20 @@ export default function Skills() {
                             direction='right'
                           >
                             <ul className='carouselTicker__list m-0'>
-                              <li className='carouselTicker__item mt-6'>
-                                <Link
-                                  href='#'
-                                  className='brand-logo icon_80 icon-shape rounded-3'
+                              {firstSkills.map((skill) => (
+                                <li
+                                  className='carouselTicker__item mt-6'
+                                  key={skill.name}
                                 >
-                                  <img
-                                    src='assets/imgs/home-page-2/hero-1/icon-4.svg'
-                                    alt='brand'
-                                  />
-                                </Link>
-                                <span className='tool-tip'>NodeJS</span>
-                              </li>
-                              <li className='carouselTicker__item mt-6'>
-                                <Link
-                                  href='#'
-                                  className='brand-logo icon_80 icon-shape rounded-3'
-                                >
-                                  <img
-                                    src='assets/imgs/home-page-2/hero-1/icon-1.svg'
-                                    alt='brand'
-                                  />
-                                </Link>
-                                <span className='tool-tip'>NextJS</span>
-                              </li>
-                              <li className='carouselTicker__item mt-6'>
-                                <Link
-                                  href='#'
-                                  className='brand-logo icon_80 icon-shape rounded-3'
-                                >
-                                  <img
-                                    src='assets/imgs/home-page-2/hero-1/icon-2.svg'
-                                    alt='brand'
-                                  />
-                                </Link>
-                                <span className='tool-tip'>Firebase</span>
-                              </li>
-                              <li className='carouselTicker__item mt-6'>
-                                <Link
-                                  href='#'
-                                  className='brand-logo icon_80 icon-shape rounded-3'
-                                >
-                                  <img
-                                    src='assets/imgs/home-page-2/hero-1/icon-3.svg'
-                                    alt='brand'
-                                  />
-                                </Link>
-                                <span className='tool-tip'>MongoDB</span>
-                              </li>
-                              <li className='carouselTicker__item mt-6'>
-                                <Link
-                                  href='#'
-                                  className='brand-logo icon_80 icon-shape rounded-3'
-                                >
-                                  <img
-                                    src='assets/imgs/home-page-2/hero-1/icon-6.svg'
-                                    alt='brand'
-                                  />
-                                </Link>
-                                <span className='tool-tip'>React</span>
-                              </li>
+                                  <Link
+                                    href='javascript:void(0)'
+                                    className='brand-logo icon_80 icon-shape rounded-3'
+                                  >
+                                    <img src={skill.image} alt={skill.name} />
+                                  </Link>
+                                  <span className='tool-tip'>{skill.name}</span>
+                                </li>
+                              ))}
                             </ul>
                           </Marquee>
                         </div>
@@ -106,54 +68,20 @@ export default function Skills() {
                           {/* Carausel Scroll */}
                           <Marquee className='carouselTicker carouselTicker-left position-relative z-1'>
                             <ul className='carouselTicker__list m-0 '>
-                              <li className='carouselTicker__item mt-6'>
-                                <Link
-                                  href='#'
-                                  className='brand-logo icon_80 icon-shape rounded-3'
+                              {secondSkills.map((skill) => (
+                                <li
+                                  className='carouselTicker__item mt-6'
+                                  key={skill.name}
                                 >
-                                  <img
-                                    src='assets/imgs/home-page-2/hero-1/icon-7.svg'
-                                    alt='brand'
-                                  />
-                                </Link>
-                                <span className='tool-tip'>VueJS</span>
-                              </li>
-                              <li className='carouselTicker__item mt-6'>
-                                <Link
-                                  href='#'
-                                  className='brand-logo icon_80 icon-shape rounded-3'
-                                >
-                                  <img
-                                    src='assets/imgs/home-page-2/hero-1/icon-8.svg'
-                                    alt='brand'
-                                  />
-                                </Link>
-                                <span className='tool-tip'>Angular</span>
-                              </li>
-                              <li className='carouselTicker__item mt-6'>
-                                <Link
-                                  href='#'
-                                  className='brand-logo icon_80 icon-shape rounded-3'
-                                >
-                                  <img
-                                    src='assets/imgs/home-page-2/hero-1/icon-9.svg'
-                                    alt='brand'
-                                  />
-                                </Link>
-                                <span className='tool-tip'>Laravel</span>
-                              </li>
-                              <li className='carouselTicker__item mt-6'>
-                                <Link
-                                  href='#'
-                                  className='brand-logo icon_80 icon-shape rounded-3'
-                                >
-                                  <img
-                                    src='assets/imgs/home-page-2/hero-1/icon-5.svg'
-                                    alt='brand'
-                                  />
-                                </Link>
-                                <span className='tool-tip'>Tailwind</span>
-                              </li>
+                                  <Link
+                                    href='javascript:void(0)'
+                                    className='brand-logo icon_80 icon-shape rounded-3'
+                                  >
+                                    <img src={skill.image} alt={skill.name} />
+                                  </Link>
+                                  <span className='tool-tip'>{skill.name}</span>
+                                </li>
+                              ))}
                             </ul>
                           </Marquee>
                         </div>
@@ -166,17 +94,25 @@ export default function Skills() {
                             <ul className='ps-3 d-flex flex-column justify-content-between h-100 position-relative'>
                               <li className='mb-3'>
                                 <div className='d-flex flex-column flex-md-row gap-2'>
-                                  <p className='text-dark text-nowrap mb-0'>Front-End:</p>
+                                  <p className='text-dark text-nowrap mb-0'>Mobile:</p>
                                   <span className='text-300'>
-                                    HTML, CSS, JavaScript, React, Angular
+                                    React Native, Expo, Flutter, Swift, Java
                                   </span>
                                 </div>
                               </li>
                               <li className='mb-3'>
                                 <div className='d-flex flex-column flex-md-row gap-2'>
-                                  <p className='text-dark text-nowrap mb-0'>Back-End:</p>
+                                  <p className='text-dark text-nowrap mb-0'>Web:</p>
                                   <span className='text-300'>
-                                    Node.js, Express, Python, Django
+                                    React, Next.js, HTML5, CSS3, Tailwind CSS
+                                  </span>
+                                </div>
+                              </li>
+                              <li className='mb-3'>
+                                <div className='d-flex flex-column flex-md-row gap-2'>
+                                  <p className='text-dark text-nowrap mb-0'>Backend:</p>
+                                  <span className='text-300'>
+                                    Node.js, Python, Django, RESTful, GraphQL
                                   </span>
                                 </div>
                               </li>
@@ -184,25 +120,23 @@ export default function Skills() {
                                 <div className='d-flex flex-column flex-md-row gap-2'>
                                   <p className='text-dark text-nowrap mb-0'>Databases:</p>
                                   <span className='text-300'>
-                                    MySQL, PostgreSQL, MongoDB
+                                    MongoDB, MySQL, PostgreSQL, Redis
                                   </span>
                                 </div>
                               </li>
                               <li className='mb-3'>
                                 <div className='d-flex flex-column flex-md-row gap-2'>
-                                  <p className='text-dark text-nowrap mb-0'>
-                                    Tools &amp; Platforms:
-                                  </p>
+                                  <p className='text-dark text-nowrap mb-0'>Cloud:</p>
                                   <span className='text-300'>
-                                    Git, Docker, AWS, Heroku
+                                    Supabase, Firebase, AWS, GCP, Vercel, Netlify
                                   </span>
                                 </div>
                               </li>
                               <li className='mb-3'>
                                 <div className='d-flex flex-column flex-md-row gap-2'>
-                                  <p className='text-dark text-nowrap mb-0'>Others:</p>
+                                  <p className='text-dark text-nowrap mb-0'>DevOps:</p>
                                   <span className='text-300'>
-                                    RESTful APIs, GraphQL, Agile Methodologies
+                                    GitHub Actions, Bitrise, Fastlane, Docker
                                   </span>
                                 </div>
                               </li>
