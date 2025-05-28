@@ -44,7 +44,11 @@ export default function Header({
                         </Link>
                       </li>
                       <li className='nav-item'>
-                        <Link className='nav-link' href='#resume'>
+                        <Link
+                          className='nav-link'
+                          href='assets/Eduardo_Diaz_FullStackMobileDeveloper.pdf'
+                          target='_blank'
+                        >
                           Resume
                         </Link>
                       </li>
