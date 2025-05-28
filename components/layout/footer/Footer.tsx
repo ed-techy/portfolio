@@ -22,7 +22,11 @@ export default function Footer() {
                   {' '}
                   About me{' '}
                 </a>
-                <a href='#resume' className='fs-6'>
+                <a
+                  href='assets/Eduardo_Diaz_FullStackMobileDeveloper.pdf'
+                  className='fs-6'
+                  target='_blank'
+                >
                   {' '}
                   Resume{' '}
                 </a>
