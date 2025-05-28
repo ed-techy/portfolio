@@ -1,7 +1,7 @@
 export default function Education() {
   return (
     <>
-      <section id='resume' className='section-education'>
+      <section id='education' className='section-education'>
         <div className='container'>
           <div className='row'>
             <div className='col-lg-6 pt-3'>
