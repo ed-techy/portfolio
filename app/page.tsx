@@ -1,3 +1,4 @@
+'use client';
 import Layout from '@/components/layout/Layout';
 import Contact from '@/components/sections/Contact';
 import Education from '@/components/sections/Education';
@@ -17,7 +18,7 @@ export default function HomePage2() {
         <Service />
         <Experience />
         <Education />
-        <Projects />
+        {/* <Projects /> */}
         <Skills />
         <Contact />
       </Layout>

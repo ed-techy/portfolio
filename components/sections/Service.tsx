@@ -26,7 +26,7 @@ export default function Service() {
                     </span>
                   </div>
                   <h3>
-                    Designing solutions
+                    Designing solutions{' '}
                     <span className='text-300'>
                       customized
                       <br />
@@ -36,6 +36,29 @@ export default function Service() {
                 </div>
                 <div className='container mt-5'>
                   <div className='row g-4'>
+                    <div className='col-lg-4 col-md-6'>
+                      <div className='card-servies-2 rounded-2 h-100 hover-up'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          viewBox='-10 0 394 512'
+                          width={24}
+                          height={24}
+                        >
+                          <path
+                            fill='#1F1F24'
+                            d='M64 448v-80h256v80c0 8.7998 -7.2002 16 -16 16h-224c-8.7998 0 -16 -7.2002 -16 -16zM64 320v-256c0 -8.7998 7.2002 -16 16 -16h224c8.7998 0 16 7.2002 16 16v256h-256zM16 64v384c0 35.2998 28.7002 64 64 64h224c35.2998 0 64 -28.7002 64 -64v-384 c0 -35.2998 -28.7002 -64 -64 -64h-224c-35.2998 0 -64 28.7002 -64 64zM192 392c-13.2549 0 -24 10.7451 -24 24s10.7451 24 24 24s24 -10.7451 24 -24s-10.7451 -24 -24 -24z'
+                          />
+                        </svg>
+                        <h6 className='my-3 fw-medium'>Mobile Development</h6>
+                        <p className='fs-7 text-300 fw-regular'>
+                          Developing fast, cross-platform mobile apps with smooth user
+                          experiences using{' '}
+                          <span className='text-secondary-2'>React Native</span>,{' '}
+                          <span className='text-secondary-2'>Expo</span>, and{' '}
+                          <span className='text-secondary-2'>Flutter</span>.
+                        </p>
+                      </div>
+                    </div>
                     <div className='col-lg-4 col-md-6'>
                       <div className='card-servies-2 rounded-2 h-100 hover-up'>
                         <svg
@@ -50,36 +73,15 @@ export default function Service() {
                             fill='#1F1F24'
                           />
                         </svg>
-                        <h6 className='my-3 fw-medium'>Web &amp; App Development</h6>
+                        <h6 className='my-3 fw-medium'>Web Development</h6>
                         <p className='fs-7 text-300 fw-regular'>
                           Crafting visually appealing and user-friendly interfaces using{' '}
                           <span className='text-secondary-2'>HTML</span>,{' '}
                           <span className='text-secondary-2'>CSS</span>,{' '}
                           <span className='text-secondary-2'>JavaScript</span>, and modern
-                          frameworks like React and Angular.
-                        </p>
-                      </div>
-                    </div>
-                    <div className='col-lg-4 col-md-6'>
-                      <div className='card-servies-2 rounded-2 h-100 hover-up'>
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          width={24}
-                          height={24}
-                          viewBox='0 0 24 24'
-                          fill='none'
-                        >
-                          <path
-                            d='M3 2.9918C3 2.44405 3.44495 2 3.9934 2H20.0066C20.5552 2 21 2.45531 21 2.9918V21.0082C21 21.556 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5447 3 21.0082V2.9918ZM19 11V4H5V11H19ZM19 13H5V20H19V13ZM9 6H15V8H9V6ZM9 15H15V17H9V15Z'
-                            fill='#1F1F24'
-                          />
-                        </svg>
-                        <h6 className='my-3 fw-medium'>Database Management</h6>
-                        <p className='fs-7 text-300 fw-regular'>
-                          Designing and managing databases with SQL and NoSQL technologies
-                          such as <span className='text-secondary-2'>MySQL</span>,{' '}
-                          <span className='text-secondary-2'>PostgreSQL</span>, and{' '}
-                          <span className='text-secondary-2'>MongoDB</span>.
+                          frameworks like <span className='text-secondary-2'>React</span>
+                          {' and '}
+                          <span className='text-secondary-2'>Next.js</span>.
                         </p>
                       </div>
                     </div>
@@ -100,8 +102,34 @@ export default function Service() {
                         <h6 className='my-3 fw-medium'>API Development</h6>
                         <p className='fs-7 text-300 fw-regular'>
                           Creating and integrating{' '}
-                          <span className='text-secondary-2'>RESTful APIs</span> to enable
+                          <span className='text-secondary-2'>RESTful APIs</span> and{' '}
+                          <span className='text-secondary-2'>GraphQL APIs</span> to enable
                           smooth communication between front-end and back-end systems.
+                        </p>
+                      </div>
+                    </div>
+                    <div className='col-lg-4 col-md-6'>
+                      <div className='card-servies-2 rounded-2 h-100 hover-up'>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          width={24}
+                          height={24}
+                          viewBox='-10 0 522 512'
+                          fill='none'
+                        >
+                          <path
+                            d='M256 0c-17 0 -33.5996 1.7002 -49.7998 4.7998c-7.7998 1.59961 -21.7002 6.09961 -29.4004 20.0996c-2 3.59961 -3.59961 7.59961 -4.59961 11.7998l-9.2998 38.5c-1.40039 5.7998 -11.2002 11.5 -16.9004 9.7998l-38 -11.2002 c-4 -1.09961 -8.09961 -1.7998 -12.1992 -1.89941c-16 -0.5 -27 9.40039 -32.2998 15.4004c-22.0996 25.2002 -39.0996 54.6006 -49.8994 86.3008c-2.59961 7.5 -5.59961 21.7002 2.60059 35.2998c2.2002 3.59961 4.90039 7 8 10l28.7998 27.2998 c4.2002 4 4.2002 15.5 0 19.5l-28.7002 27.2998c-3.09961 3 -5.7998 6.40039 -8 10c-8.2998 13.5996 -5.2998 27.7998 -2.7002 35.3994c10.7998 31.7002 27.8994 61.2002 49.8994 86.2998c5.2998 6 16.2002 15.9004 32.2998 15.4004 c4.09961 -0.0996094 8.19922 -0.699219 12.1992 -1.89941l38 -11.2002c5.7002 -1.7002 15.5 4 16.9004 9.7998l9.2998 38.5c1 4.2002 2.59961 8.10059 4.59961 11.8008c7.59961 14 21.5 18.5996 29.4004 20.0996c16.2002 3.09961 32.7998 4.7998 49.7998 4.7998 s33.5996 -1.7002 49.7998 -4.7998c7.7998 -1.59961 21.7002 -6.09961 29.4004 -20.0996c2 -3.59961 3.59961 -7.59961 4.59961 -11.7998l9.2998 -38.5c1.40039 -5.7998 11.2002 -11.5 16.9004 -9.7998l38 11.2998c4 1.09961 8.09961 1.7998 12.1992 1.89941 c16 0.5 27 -9.40039 32.2998 -15.4004c22.0996 -25.2002 39.0996 -54.6006 49.8994 -86.3008c2.5 -7.59961 5.5 -21.7998 -2.7002 -35.3994c-2.2002 -3.59961 -4.90039 -7 -8 -10l-28.7002 -27.2998c-4.2002 -4 -4.2002 -15.5 0 -19.5l28.7002 -27.2998 c3.09961 -3 5.7998 -6.40039 8 -10c8.2998 -13.5996 5.2998 -27.7998 2.7002 -35.3994c-10.7998 -31.7002 -27.7998 -61.2002 -49.8994 -86.2998c-5.2998 -6 -16.2002 -15.9004 -32.2998 -15.4004c-4.09961 0.0996094 -8.19922 0.699219 -12.1992 1.89941l-38 11.2002 c-5.7002 1.7002 -15.5 -4 -16.9004 -9.7998l-9.2998 -38.5c-1 -4.2002 -2.59961 -8.10059 -4.59961 -11.8008c-7.59961 -14 -21.5 -18.5996 -29.4004 -20.0996c-16.2002 -3.09961 -32.7998 -4.7998 -49.7998 -4.7998zM218.1 51.4004h0.0996094 c24.5996 -4.5 51.2998 -4.5 75.8994 0l8.5 35.0996c7.7998 32.2998 45.3994 54 77.1992 44.5996l34.5996 -10.2002c16.5 19.2998 29.5 41.7002 38 65.7002l-26.2002 24.9004c-24 22.7998 -24 66.2002 0 89l26.2002 24.9004c-8.5 24 -21.5 46.4004 -38 65.7002 l-34.5996 -10.2002c-31.9004 -9.2998 -69.4004 12.2998 -77.2002 44.5996l-8.5 35.0996c-24.5996 4.5 -51.2998 4.5 -75.8994 0l-8.5 -35.0996c-7.7998 -32.2998 -45.3994 -54 -77.1992 -44.5996l-34.5996 10.2002c-16.5 -19.2998 -29.5 -41.7002 -38 -65.7002 l26.2002 -24.9004c24 -22.7998 24 -66.2002 0 -89l-26.2002 -24.9004c8.5 -24 21.5 -46.4004 38 -65.7002l34.5 10.2002c31.9004 9.2998 69.4004 -12.2998 77.2002 -44.5996zM208 256c0 -17.1484 9.14844 -32.9941 24 -41.5684s33.1494 -8.57422 48.001 0 s24 24.4199 24 41.5684s-9.14844 32.9941 -24 41.5684s-33.1494 8.57422 -48.001 0s-24 -24.4199 -24 -41.5684zM256 352c34.2979 0 65.9902 -18.2979 83.1387 -48s17.1484 -66.2969 0 -95.999s-48.8408 -48 -83.1387 -48s-65.9902 18.2979 -83.1387 48 s-17.1484 66.2969 0 95.999s48.8408 48 83.1387 48z'
+                            fill='#1F1F24'
+                          />
+                        </svg>
+                        <h6 className='my-3 fw-medium'>DevOps & CI/CD</h6>
+                        <p className='fs-7 text-300 fw-regular'>
+                          Streamlining development workflows with{' '}
+                          <span className='text-secondary-2'>automated testing</span>,{' '}
+                          <span className='text-secondary-2'>continuous integration</span>
+                          , and{' '}
+                          <span className='text-secondary-2'>deployment pipelines</span>{' '}
+                          for releases.
                         </p>
                       </div>
                     </div>
@@ -121,32 +149,8 @@ export default function Service() {
                         </svg>
                         <h6 className='my-3 fw-medium'>Performance Optimization</h6>
                         <p className='fs-7 text-300 fw-regular'>
-                          Improving the speed and performance of web applications to
-                          provide a better user experience. Work with{' '}
-                          <span className='text-secondary-2'>Nodejs</span>,{' '}
-                          <span className='text-secondary-2'>Express</span>
-                        </p>
-                      </div>
-                    </div>
-                    <div className='col-lg-4 col-md-6'>
-                      <div className='card-servies-2 rounded-2 h-100 hover-up'>
-                        <svg
-                          xmlns='http://www.w3.org/2000/svg'
-                          width={24}
-                          height={24}
-                          viewBox='0 0 24 24'
-                          fill='none'
-                        >
-                          <path
-                            d='M4.00436 6.41662L0.761719 3.17398L2.17593 1.75977L5.41857 5.00241H20.6603C21.2126 5.00241 21.6603 5.45013 21.6603 6.00241C21.6603 6.09973 21.6461 6.19654 21.6182 6.28976L19.2182 14.2898C19.0913 14.7128 18.7019 15.0025 18.2603 15.0025H6.00436V17.0025H17.0044V19.0025H5.00436C4.45207 19.0025 4.00436 18.5547 4.00436 18.0025V6.41662ZM6.00436 7.00241V13.0025H17.5163L19.3163 7.00241H6.00436ZM5.50436 23.0025C4.67593 23.0025 4.00436 22.3309 4.00436 21.5025C4.00436 20.674 4.67593 20.0025 5.50436 20.0025C6.33279 20.0025 7.00436 20.674 7.00436 21.5025C7.00436 22.3309 6.33279 23.0025 5.50436 23.0025ZM17.5044 23.0025C16.6759 23.0025 16.0044 22.3309 16.0044 21.5025C16.0044 20.674 16.6759 20.0025 17.5044 20.0025C18.3328 20.0025 19.0044 20.674 19.0044 21.5025C19.0044 22.3309 18.3328 23.0025 17.5044 23.0025Z'
-                            fill='#1F1F24'
-                          />
-                        </svg>
-                        <h6 className='my-3 fw-medium'>E-commerce Solutions</h6>
-                        <p className='fs-7 text-300 fw-regular'>
-                          Developing scalable and secure payment solutions for{' '}
-                          <span className='text-secondary-2'>e-commerce platforms</span>{' '}
-                          tailored to your business needs.
+                          Improving the speed and performance of mobile web applications
+                          to provide a better user experience.
                         </p>
                       </div>
                     </div>
@@ -166,8 +170,9 @@ export default function Service() {
                         </svg>
                         <h6 className='my-3 fw-medium'>Integrating AI</h6>
                         <p className='fs-7 text-300 fw-regular'>
-                          Boost your applications with AI for improved efficiency,
-                          automation, and enhanced user experience
+                          Boost your applications with{' '}
+                          <span className='text-secondary-2'>AI</span> for improved
+                          efficiency, automation, and enhanced user experience
                         </p>
                       </div>
                     </div>
@@ -177,7 +182,7 @@ export default function Service() {
                       Excited to take on <span className='text-dark'>new projects</span>{' '}
                       and collaborate. <br />
                       Let's chat about your ideas.{' '}
-                      <Link href='#' className='text-primary-2'>
+                      <Link href='#contact' className='text-primary-2'>
                         Reach out!
                       </Link>
                     </p>

@@ -20,15 +20,11 @@ export default function OffCanvas({ isOffCanvas, handleOffCanvas }: any) {
               minds.
             </p>
             <div className='mb-3'>
-              <span className='text-400 fs-5'>Phone Number</span>
-              <p className='mb-0'>+52 1234567890</p>
-            </div>
-            <div className='mb-3'>
               <span className='text-400 fs-5'>Email</span>
-              <p className='mb-0'>contact@eduardo.dev</p>
+              <p className='mb-0'>eduardod8108@gmail.com</p>
             </div>
             <div className='mb-3'>
-              <span className='text-400 fs-5'>Skype</span>
+              <span className='text-400 fs-5'>Microsoft Teams</span>
               <p className='mb-0'>eduardo.dev</p>
             </div>
             <div className='mb-3'>
@@ -39,10 +35,10 @@ export default function OffCanvas({ isOffCanvas, handleOffCanvas }: any) {
           <div className='contact-list'>
             <p className='text-400 fs-5 mb-2'>Social</p>
             <div className='d-md-flex d-none gap-3'>
-              <Link href='/http://linkedin.com'>
+              <Link href='http://linkedin.com'>
                 <i className='ri-linkedin-fill fs-18' />
               </Link>
-              <Link href='/http://github.com'>
+              <Link href='https://github.com/ed-techy' target='_blank'>
                 <i className='ri-github-fill fs-18' />
               </Link>
             </div>

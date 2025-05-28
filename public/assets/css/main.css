@@ -530,7 +530,7 @@ img {
     color: transparent;
   }
   50% {
-    color: #1f1f24;
+    color: var(--tc-neutral-0);
   }
   100% {
     color: transparent;
@@ -4108,23 +4108,6 @@ textarea.form-control {
   font-weight: 800;
   text-transform: uppercase;
   paint-order: stroke fill;
-}
-
-.section-skills-1 .skills {
-  padding: 29px 35px 25px;
-  border-radius: 16px;
-  background:
-    linear-gradient(var(--tc-neutral-900), var(--tc-neutral-900)) padding-box,
-    var(--tc-linear-dark-3) border-box;
-  border: 2px solid transparent;
-}
-.section-skills-1 .skills:hover {
-  background:
-    linear-gradient(var(--tc-neutral-800), var(--tc-neutral-800)) padding-box,
-    var(--tc-linear-2) border-box;
-}
-.section-skills-1 .skills:hover .skills-ratio .count {
-  color: #6e4ef2;
 }
 
 .card-testimonial-1 {
@@ -14197,9 +14180,6 @@ strong {
 @media screen and (max-width: 575.98px) {
   .pt-200 {
     padding-top: 100px;
-  }
-  .section-skills-1 .skills {
-    padding: 20px 20px 20px;
   }
   .section-service-2 .card-servies-2 {
     padding: 70px 30px 30px 30px !important;

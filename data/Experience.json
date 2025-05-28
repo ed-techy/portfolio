@@ -1,0 +1,111 @@
+[
+  {
+    "id": "1",
+    "company": "Goglia Nutrition",
+    "duration": "2024 - 2025",
+    "role": "Senior Full Stack Mobile Developer",
+    "contributions": [
+      "Developed two cross-platform healthcare mobile applications using React Native, with a focus on personalized nutrition and user health tracking.",
+      "Implemented scalable backend APIs using Python, Node.js, and Firebase Functions, enabling real-time data handling and secure user authentication.",
+      "Handled mobile DevOps responsibilities, including provisioning certificates, managing App Store and Google Play releases, and troubleshooting deployment issues across platforms."
+    ],
+    "skills": [
+      "React Native",
+      "TypeScript",
+      "Firebase",
+      "Python",
+      "Node.js",
+      "AWS",
+      "CI/CD",
+      "Google Cloud Platform"
+    ]
+  },
+  {
+    "id": "2",
+    "company": "Luxoft Mexico",
+    "duration": "2021 - 2023",
+    "role": "Senior Software Engineer",
+    "contributions": [
+      "Led mobile and web application development across four enterprise-level projects using React Native, React.js, Next.js, and Node.js, delivering performant, maintainable, and scalable applications.",
+      "Developed robust front-end features and cross-platform mobile components with TypeScript, JavaScript, and modern state management libraries like Redux, MobX, and MST.",
+      "Architected CI/CD pipelines using Vercel, Bitrise, AppCenter, and Fastlane to streamline development, testing, and deployment workflows for both Android and iOS platforms."
+    ],
+    "skills": [
+      "React Native",
+      "React.js",
+      "Jest",
+      "Detox",
+      "Fastlane",
+      "Firebase",
+      "RevenueCat",
+      "Bitrise",
+      "Sentry"
+    ]
+  },
+  {
+    "id": "3",
+    "company": "Luxoft Mexico",
+    "duration": "2019 - 2021",
+    "role": "React Native Developer",
+    "contributions": [
+      "Developed and maintained core functionality for multiple crossplatform mobile applications using React Native, supporting both iOS and Android ecosystems.",
+      "Integrated and maintained RESTful APIs, ensuring consistent data flow and efficient client-server communication.",
+      "Implemented CI/CD pipelines with Bitrise, AppCenter, and Fastlane to automate build, test, and release processes.",
+      "Integrated third-party analytics, error tracking, and monetization tools including Amplitude, Sentry, and RevenueCat."
+    ],
+    "skills": [
+      "React Native",
+      "Jest",
+      "Detox",
+      "Fastlane",
+      "React.js",
+      "Firebase",
+      "AWS",
+      "RevenueCat",
+      "Bitrise",
+      "Sentry"
+    ]
+  },
+  {
+    "id": "4",
+    "company": "AGILE Infoways",
+    "duration": "2017 - 2019",
+    "role": "Full Stack Engineer",
+    "contributions": [
+      "Built user interfaces and mobile experiences using React.js, React Native, Java, and Swift, ensuring cross-platform functionality and a consistent user experience.",
+      "Designed and implemented application architecture and UI components for both iOS and Android platforms, using Objective-C, Java, and Redux for efficient state management.",
+      "Developed and integrated RESTful APIs using Node.js and Express, and managed backend services with MongoDB and MySQL databases."
+    ],
+    "skills": [
+      "React Native",
+      "React.js",
+      "Swift",
+      "Objective-C",
+      "Java",
+      "Node.js",
+      "Firebase",
+      "MongoDB"
+    ]
+  },
+  {
+    "id": "5",
+    "company": "FrontRunner",
+    "duration": "2014 - 2017",
+    "role": "Mobile Developer",
+    "contributions": [
+      "Built native applications using Objective-C, Swift, and Java, enabling users to create and share posts, like and comment, connect with other users, engage in private messaging, and configure push notification settings.",
+      "Collaborated on the transition of some projects to React Native and React.js, contributing reusable components and optimizing cross-platform performance.",
+      "Utilized Node.js, JavaScript, and JSON for backend integration and data formatting."
+    ],
+    "skills": [
+      "Swift",
+      "Objective-C",
+      "Java",
+      "React Native",
+      "React.js",
+      "Node.js",
+      "Firebase",
+      "Google Cloud Platform"
+    ]
+  }
+]

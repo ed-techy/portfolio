@@ -44,7 +44,11 @@ export default function Header({
                         </Link>
                       </li>
                       <li className='nav-item'>
-                        <Link className='nav-link' href='#resume'>
+                        <Link
+                          className='nav-link'
+                          href='assets/Eduardo_Diaz_FullStackMobileDeveloper.pdf'
+                          target='_blank'
+                        >
                           Resume
                         </Link>
                       </li>
@@ -71,7 +75,7 @@ export default function Header({
                     <Link href='/http://linkedin.com'>
                       <i className='ri-linkedin-fill fs-18' />
                     </Link>
-                    <Link href='/http://github.com'>
+                    <Link href='https://github.com/ed-techy' target='_blank'>
                       <i className='ri-github-fill fs-18' />
                     </Link>
                   </div>
