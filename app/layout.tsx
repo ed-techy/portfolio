@@ -1,9 +1,9 @@
-import '/public/assets/css/vendors/bootstrap.min.css';
-import '/public/assets/css/vendors/swiper-bundle.min.css';
-import '/public/assets/css/vendors/carouselTicker.css';
-import '/public/assets/css/vendors/magnific-popup.css';
+import '../styles/vendors/bootstrap.min.css';
+import '../styles/vendors/swiper-bundle.min.css';
+import '../styles/vendors/carouselTicker.css';
+import '../styles/vendors/magnific-popup.css';
 import '/public/assets/fonts/remixicon/remixicon.css';
-import '/public/assets/css/main.css';
+import '../styles/main.css';
 
 import type { Metadata } from 'next';
 import { Urbanist, Playfair_Display, DM_Mono } from 'next/font/google';
