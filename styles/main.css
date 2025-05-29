@@ -2674,7 +2674,7 @@ textarea {
   width: 24px;
   display: inline-block;
   opacity: 1;
-  /* background: url(../imgs/template/icons/arrow-right-big.svg) no-repeat center; */
+  /* background: url(/assets/imgs/template/icons/arrow-right-big.svg) no-repeat center; */
 }
 .mobile-header-wrapper-style
   .mobile-header-wrapper-inner
@@ -2695,7 +2695,7 @@ textarea {
   li.has-children.active
   > .menu-expand
   i {
-  /* background: url(../imgs/template/icons/arrow-down-big.svg) no-repeat center; */
+  /* background: url(/assets/imgs/template/icons/arrow-down-big.svg) no-repeat center; */
 }
 .mobile-header-wrapper-style
   .mobile-header-wrapper-inner
@@ -4019,7 +4019,7 @@ textarea.form-control {
 }
 
 .button-project .ellipse {
-  background-image: url(../imgs/projects/projects-1/elipse.png);
+  background-image: url(/assets/imgs/projects/projects-1/elipse.png);
 }
 
 .fillter-project {
@@ -14332,7 +14332,7 @@ strong {
   transition: all 0.3s ease;
 }
 .section-skills-2 .carouselTicker__item .tool-tip::before {
-  content: url(../imgs/home-page-2/template/down.svg);
+  content: url(/assets/imgs/home-page-2/template/down.svg);
   position: absolute;
   bottom: -14px;
   left: 30%;
